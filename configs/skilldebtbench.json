@@ -1,0 +1,9 @@
+﻿{
+  "default": {
+    "steps": 180,
+    "drift_step": 80,
+    "seeds": 20,
+    "pollution_rates": [0.0, 0.1, 0.25, 0.5, 0.75],
+    "task_families": ["nav", "search", "code", "web", "tool"]
+  }
+}
