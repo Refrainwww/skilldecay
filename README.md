@@ -85,7 +85,6 @@ Small derived tables are included for convenience:
 - `data/skilldebtbench/main_table.md`
 - `data/ablation/ablation_table.md`
 - `data/coding_exec_skill_debt/table.md`
-- `paper/aaai/results_snapshot.md`
 
 Large raw logs are ignored by git and can be regenerated.
 
