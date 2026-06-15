@@ -1,0 +1,22 @@
+﻿name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install package
+        run: python -m pip install -e .
+      - name: Compile
+        run: python -m compileall -q src benchmarks scripts
+      - name: Run synthetic smoke test
+        run: python -m scripts.run_skilldebtbench --output-dir data/ci_skilldebtbench --steps 30 --drift-step 12 --seeds 1 --pollution-rates 0.25 --modes no_skill,static,skill_decay
+      - name: Run executable coding smoke test
+        run: python -m benchmarks.coding_skill_debt.exec_benchmark --output-dir data/ci_coding_exec --seeds 1
