@@ -1,0 +1,169 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="950" viewBox="0 0 1600 950">
+  <defs>
+    <style>
+      .title { font: 700 34px Arial, Helvetica, sans-serif; fill: #102033; }
+      .subtitle { font: 400 18px Arial, Helvetica, sans-serif; fill: #506070; }
+      .section { font: 700 20px Arial, Helvetica, sans-serif; fill: #243447; }
+      .label { font: 600 17px Arial, Helvetica, sans-serif; fill: #1f2d3d; }
+      .small { font: 400 14px Arial, Helvetica, sans-serif; fill: #36495c; }
+      .tiny { font: 400 12px Arial, Helvetica, sans-serif; fill: #405468; }
+      .metric { font: 600 13px Arial, Helvetica, sans-serif; fill: #26384a; }
+      .box { stroke: #25415f; stroke-width: 2; rx: 18; ry: 18; }
+      .soft { filter: drop-shadow(0px 3px 6px rgba(30, 45, 60, 0.15)); }
+      .arrow { stroke: #385674; stroke-width: 3; fill: none; marker-end: url(#arrowhead); }
+      .arrow2 { stroke: #71859a; stroke-width: 2.2; fill: none; marker-end: url(#arrowhead2); stroke-dasharray: 7 6; }
+      .state { font: 700 15px Arial, Helvetica, sans-serif; fill: #ffffff; }
+    </style>
+    <marker id="arrowhead" markerWidth="12" markerHeight="8" refX="10" refY="4" orient="auto">
+      <path d="M0,0 L12,4 L0,8 Z" fill="#385674" />
+    </marker>
+    <marker id="arrowhead2" markerWidth="12" markerHeight="8" refX="10" refY="4" orient="auto">
+      <path d="M0,0 L12,4 L0,8 Z" fill="#71859a" />
+    </marker>
+    <linearGradient id="blue" x1="0" x2="1">
+      <stop offset="0" stop-color="#e8f2ff"/>
+      <stop offset="1" stop-color="#d5e8ff"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0" x2="1">
+      <stop offset="0" stop-color="#e8f8ef"/>
+      <stop offset="1" stop-color="#d4f0df"/>
+    </linearGradient>
+    <linearGradient id="orange" x1="0" x2="1">
+      <stop offset="0" stop-color="#fff3df"/>
+      <stop offset="1" stop-color="#ffe3b5"/>
+    </linearGradient>
+    <linearGradient id="red" x1="0" x2="1">
+      <stop offset="0" stop-color="#ffecec"/>
+      <stop offset="1" stop-color="#ffd0d0"/>
+    </linearGradient>
+    <linearGradient id="purple" x1="0" x2="1">
+      <stop offset="0" stop-color="#f0ecff"/>
+      <stop offset="1" stop-color="#e1d7ff"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="950" fill="#fbfcfe"/>
+
+  <text x="800" y="58" text-anchor="middle" class="title">SkillDecay: Self-Forgetting Skill Libraries for Robust Self-Evolving Agents</text>
+  <text x="800" y="88" text-anchor="middle" class="subtitle">Detect skill debt, quarantine harmful skills, and preserve useful reuse under task/tool/model drift</text>
+
+  <!-- Left: skill debt sources -->
+  <rect x="45" y="140" width="300" height="560" fill="url(#red)" class="box soft"/>
+  <text x="195" y="178" text-anchor="middle" class="section">1. Skill Debt Sources</text>
+  <text x="70" y="220" class="label">Stale skills</text>
+  <text x="70" y="245" class="small">Outdated APIs, tool flags,</text>
+  <text x="70" y="266" class="small">web layouts, environment rules</text>
+  <rect x="70" y="292" width="230" height="62" rx="12" fill="#ffffff" stroke="#d46a6a"/>
+  <text x="86" y="319" class="tiny">Example: fetch_user(id)</text>
+  <text x="86" y="340" class="tiny">but task needs get_user(user_id)</text>
+
+  <text x="70" y="395" class="label">Over-specific skills</text>
+  <text x="70" y="420" class="small">Narrow workaround retrieved</text>
+  <text x="70" y="441" class="small">outside its valid context</text>
+  <rect x="70" y="467" width="230" height="62" rx="12" fill="#ffffff" stroke="#d46a6a"/>
+  <text x="86" y="494" class="tiny">Example: rare repo fix</text>
+  <text x="86" y="515" class="tiny">misapplied to general task</text>
+
+  <text x="70" y="570" class="label">Conflicting skills</text>
+  <text x="70" y="595" class="small">Multiple procedures imply</text>
+  <text x="70" y="616" class="small">incompatible actions</text>
+  <rect x="70" y="642" width="230" height="62" rx="12" fill="#ffffff" stroke="#d46a6a"/>
+  <text x="86" y="669" class="tiny">Example: use pytest</text>
+  <text x="86" y="690" class="tiny">vs. migrate to unittest</text>
+
+  <!-- Center top: agent executor -->
+  <rect x="420" y="135" width="330" height="170" fill="url(#blue)" class="box soft"/>
+  <text x="585" y="174" text-anchor="middle" class="section">2. Agent Executor</text>
+  <text x="450" y="215" class="small">Receives task + retrieves skills</text>
+  <text x="450" y="239" class="small">Executes plan / tool calls / code patches</text>
+  <text x="450" y="263" class="small">Produces rollout trace and outcome</text>
+
+  <rect x="420" y="365" width="330" height="245" fill="url(#green)" class="box soft"/>
+  <text x="585" y="403" text-anchor="middle" class="section">3. Skill Library</text>
+  <text x="450" y="440" class="small">Reusable natural-language skills,</text>
+  <text x="450" y="464" class="small">procedures, constraints, validators</text>
+  <rect x="450" y="496" width="98" height="40" rx="20" fill="#2f9e44"/>
+  <text x="499" y="521" text-anchor="middle" class="state">active</text>
+  <rect x="558" y="496" width="98" height="40" rx="20" fill="#f59f00"/>
+  <text x="607" y="521" text-anchor="middle" class="state">suspect</text>
+  <rect x="666" y="496" width="98" height="40" rx="20" fill="#e03131"/>
+  <text x="715" y="521" text-anchor="middle" class="state">quarantine</text>
+  <rect x="503" y="552" width="110" height="40" rx="20" fill="#868e96"/>
+  <text x="558" y="577" text-anchor="middle" class="state">deprecated</text>
+  <rect x="625" y="552" width="98" height="40" rx="20" fill="#7048e8"/>
+  <text x="674" y="577" text-anchor="middle" class="state">revived</text>
+
+  <!-- Right: diagnosis -->
+  <rect x="845" y="135" width="330" height="475" fill="url(#orange)" class="box soft"/>
+  <text x="1010" y="174" text-anchor="middle" class="section">4. SkillDecay Diagnosis</text>
+  <text x="875" y="214" class="label">Signals from recent rollouts</text>
+
+  <rect x="875" y="242" width="250" height="78" rx="14" fill="#ffffff" stroke="#d99a32"/>
+  <text x="895" y="270" class="label">Utility score</text>
+  <text x="895" y="294" class="small">success + helpfulness when invoked</text>
+
+  <rect x="875" y="344" width="250" height="78" rx="14" fill="#ffffff" stroke="#d99a32"/>
+  <text x="895" y="372" class="label">Staleness score</text>
+  <text x="895" y="396" class="small">validation failures + drift pressure</text>
+
+  <rect x="875" y="446" width="250" height="78" rx="14" fill="#ffffff" stroke="#d99a32"/>
+  <text x="895" y="474" class="label">Conflict score</text>
+  <text x="895" y="498" class="small">contradictions + incompatible actions</text>
+
+  <text x="875" y="566" class="small">Policy actions: downweight, quarantine,</text>
+  <text x="875" y="590" class="small">deprecate, repair candidate, revive</text>
+
+  <!-- Far right: benchmark and outputs -->
+  <rect x="1260" y="135" width="295" height="255" fill="url(#purple)" class="box soft"/>
+  <text x="1407" y="174" text-anchor="middle" class="section">5. SkillDebtBench</text>
+  <text x="1288" y="215" class="small">Controlled evaluation with:</text>
+  <text x="1288" y="243" class="small">- pollution rate</text>
+  <text x="1288" y="267" class="small">- drift step</text>
+  <text x="1288" y="291" class="small">- debt type</text>
+  <text x="1288" y="315" class="small">- retrieval policy</text>
+  <text x="1288" y="347" class="tiny">Synthetic + executable coding tasks</text>
+
+  <rect x="1260" y="445" width="295" height="255" fill="#eef6ff" class="box soft"/>
+  <text x="1407" y="484" text-anchor="middle" class="section">6. Evaluation Metrics</text>
+  <text x="1288" y="523" class="metric">Task success</text>
+  <text x="1288" y="548" class="metric">Post-drift recovery</text>
+  <text x="1288" y="573" class="metric">Harmful invocation rate</text>
+  <text x="1288" y="598" class="metric">Skill reuse precision</text>
+  <text x="1288" y="623" class="metric">Token / execution cost</text>
+  <text x="1288" y="648" class="metric">Active library size</text>
+
+  <!-- bottom state machine -->
+  <rect x="245" y="770" width="1110" height="120" rx="22" fill="#ffffff" stroke="#ccd6e0" stroke-width="2" class="soft"/>
+  <text x="800" y="803" text-anchor="middle" class="section">Skill lifecycle controlled by SkillDecay</text>
+  <rect x="315" y="830" width="130" height="38" rx="19" fill="#2f9e44"/>
+  <text x="380" y="854" text-anchor="middle" class="state">active</text>
+  <rect x="530" y="830" width="130" height="38" rx="19" fill="#f59f00"/>
+  <text x="595" y="854" text-anchor="middle" class="state">suspect</text>
+  <rect x="745" y="830" width="150" height="38" rx="19" fill="#e03131"/>
+  <text x="820" y="854" text-anchor="middle" class="state">quarantined</text>
+  <rect x="990" y="830" width="150" height="38" rx="19" fill="#868e96"/>
+  <text x="1065" y="854" text-anchor="middle" class="state">deprecated</text>
+  <rect x="745" y="710" width="130" height="38" rx="19" fill="#7048e8"/>
+  <text x="810" y="734" text-anchor="middle" class="state">revived</text>
+
+  <!-- arrows -->
+  <path d="M345 250 C375 250 388 230 420 225" class="arrow"/>
+  <path d="M585 305 L585 365" class="arrow"/>
+  <path d="M750 235 C790 235 805 250 845 270" class="arrow"/>
+  <path d="M845 520 C800 555 790 575 750 575" class="arrow"/>
+  <path d="M1175 370 C1210 360 1225 330 1260 300" class="arrow"/>
+  <path d="M1175 515 C1215 535 1225 565 1260 585" class="arrow"/>
+  <path d="M445 849 L530 849" class="arrow"/>
+  <path d="M660 849 L745 849" class="arrow"/>
+  <path d="M895 849 L990 849" class="arrow"/>
+  <path d="M820 830 C820 790 815 765 810 748" class="arrow2"/>
+  <path d="M745 729 C650 725 480 760 405 830" class="arrow2"/>
+
+  <text x="462" y="832" class="tiny">weak utility</text>
+  <text x="670" y="832" class="tiny">high debt risk</text>
+  <text x="905" y="832" class="tiny">no recovery</text>
+  <text x="610" y="722" class="tiny">fresh positive evidence</text>
+
+  <!-- caption -->
+  <text x="800" y="925" text-anchor="middle" class="subtitle">Core thesis: skill accumulation creates skill debt; robust self-evolving agents require explicit forgetting and revival.</text>
+</svg>
