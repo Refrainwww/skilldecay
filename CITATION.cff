@@ -1,0 +1,12 @@
+﻿cff-version: 1.2.0
+title: "SkillDecay: Self-Forgetting Skill Libraries for Robust Self-Evolving Agents"
+message: "If you use this software, please cite it using the metadata from this file."
+type: software
+authors:
+  - family-names: "SkillDecay contributors"
+version: 0.1.0
+date-released: 2026-06-16
+license: MIT
+repository-code: "https://github.com/Refrainwww/skilldecay"
+abstract: "A research prototype and benchmark suite for studying skill debt and self-forgetting skill libraries in self-evolving agents."
+
