@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="460" viewBox="0 0 760 460">
+<rect width="100%" height="100%" fill="white"/>
+<line x1="60" y1="400" x2="700" y2="400" stroke="black"/>
+<line x1="60" y1="60" x2="60" y2="400" stroke="black"/>
+<text x="380.0" y="30" text-anchor="middle" font-family="Arial" font-size="18">task_success vs skill debt pollution</text>
+<text x="380.0" y="445" text-anchor="middle" font-family="Arial" font-size="13">pollution rate</text>
+<text x="18" y="230.0" transform="rotate(-90 18,230.0)" text-anchor="middle" font-family="Arial" font-size="13">task_success</text>
+<polyline points="60.0,227.7 145.3,263.1 273.3,297.6 486.7,329.1 700.0,329.7" fill="none" stroke="#1f77b4" stroke-width="2"/>
+<circle cx="60.0" cy="227.7" r="3" fill="#1f77b4"/>
+<circle cx="145.3" cy="263.1" r="3" fill="#1f77b4"/>
+<circle cx="273.3" cy="297.6" r="3" fill="#1f77b4"/>
+<circle cx="486.7" cy="329.1" r="3" fill="#1f77b4"/>
+<circle cx="700.0" cy="329.7" r="3" fill="#1f77b4"/>
+<rect x="708" y="50" width="10" height="10" fill="#1f77b4"/>
+<text x="724" y="60" font-family="Arial" font-size="11">health_score</text>
+<polyline points="60.0,88.3 145.3,191.1 273.3,291.6 486.7,341.9 700.0,357.1" fill="none" stroke="#ff7f0e" stroke-width="2"/>
+<circle cx="60.0" cy="88.3" r="3" fill="#ff7f0e"/>
+<circle cx="145.3" cy="191.1" r="3" fill="#ff7f0e"/>
+<circle cx="273.3" cy="291.6" r="3" fill="#ff7f0e"/>
+<circle cx="486.7" cy="341.9" r="3" fill="#ff7f0e"/>
+<circle cx="700.0" cy="357.1" r="3" fill="#ff7f0e"/>
+<rect x="708" y="68" width="10" height="10" fill="#ff7f0e"/>
+<text x="724" y="78" font-family="Arial" font-size="11">lfu</text>
+<polyline points="60.0,88.3 145.3,184.6 273.3,282.2 486.7,317.7 700.0,329.1" fill="none" stroke="#2ca02c" stroke-width="2"/>
+<circle cx="60.0" cy="88.3" r="3" fill="#2ca02c"/>
+<circle cx="145.3" cy="184.6" r="3" fill="#2ca02c"/>
+<circle cx="273.3" cy="282.2" r="3" fill="#2ca02c"/>
+<circle cx="486.7" cy="317.7" r="3" fill="#2ca02c"/>
+<circle cx="700.0" cy="329.1" r="3" fill="#2ca02c"/>
+<rect x="708" y="86" width="10" height="10" fill="#2ca02c"/>
+<text x="724" y="96" font-family="Arial" font-size="11">lru</text>
+<polyline points="60.0,371.7 145.3,371.7 273.3,371.7 486.7,371.7 700.0,371.7" fill="none" stroke="#d62728" stroke-width="2"/>
+<circle cx="60.0" cy="371.7" r="3" fill="#d62728"/>
+<circle cx="145.3" cy="371.7" r="3" fill="#d62728"/>
+<circle cx="273.3" cy="371.7" r="3" fill="#d62728"/>
+<circle cx="486.7" cy="371.7" r="3" fill="#d62728"/>
+<circle cx="700.0" cy="371.7" r="3" fill="#d62728"/>
+<rect x="708" y="104" width="10" height="10" fill="#d62728"/>
+<text x="724" y="114" font-family="Arial" font-size="11">no_skill</text>
+<polyline points="60.0,88.3 145.3,88.3 273.3,88.3 486.7,88.3 700.0,88.3" fill="none" stroke="#9467bd" stroke-width="2"/>
+<circle cx="60.0" cy="88.3" r="3" fill="#9467bd"/>
+<circle cx="145.3" cy="88.3" r="3" fill="#9467bd"/>
+<circle cx="273.3" cy="88.3" r="3" fill="#9467bd"/>
+<circle cx="486.7" cy="88.3" r="3" fill="#9467bd"/>
+<circle cx="700.0" cy="88.3" r="3" fill="#9467bd"/>
+<rect x="708" y="122" width="10" height="10" fill="#9467bd"/>
+<text x="724" y="132" font-family="Arial" font-size="11">oracle</text>
+<polyline points="60.0,88.3 145.3,88.3 273.3,268.9 486.7,358.4 700.0,324.4" fill="none" stroke="#8c564b" stroke-width="2"/>
+<circle cx="60.0" cy="88.3" r="3" fill="#8c564b"/>
+<circle cx="145.3" cy="88.3" r="3" fill="#8c564b"/>
+<circle cx="273.3" cy="268.9" r="3" fill="#8c564b"/>
+<circle cx="486.7" cy="358.4" r="3" fill="#8c564b"/>
+<circle cx="700.0" cy="324.4" r="3" fill="#8c564b"/>
+<rect x="708" y="140" width="10" height="10" fill="#8c564b"/>
+<text x="724" y="150" font-family="Arial" font-size="11">recency</text>
+<polyline points="60.0,186.7 145.3,170.5 273.3,182.8 486.7,184.9 700.0,205.2" fill="none" stroke="#e377c2" stroke-width="2"/>
+<circle cx="60.0" cy="186.7" r="3" fill="#e377c2"/>
+<circle cx="145.3" cy="170.5" r="3" fill="#e377c2"/>
+<circle cx="273.3" cy="182.8" r="3" fill="#e377c2"/>
+<circle cx="486.7" cy="184.9" r="3" fill="#e377c2"/>
+<circle cx="700.0" cy="205.2" r="3" fill="#e377c2"/>
+<rect x="708" y="158" width="10" height="10" fill="#e377c2"/>
+<text x="724" y="168" font-family="Arial" font-size="11">skill_decay</text>
+<polyline points="60.0,88.3 145.3,179.6 273.3,301.0 486.7,346.1 700.0,370.6" fill="none" stroke="#17becf" stroke-width="2"/>
+<circle cx="60.0" cy="88.3" r="3" fill="#17becf"/>
+<circle cx="145.3" cy="179.6" r="3" fill="#17becf"/>
+<circle cx="273.3" cy="301.0" r="3" fill="#17becf"/>
+<circle cx="486.7" cy="346.1" r="3" fill="#17becf"/>
+<circle cx="700.0" cy="370.6" r="3" fill="#17becf"/>
+<rect x="708" y="176" width="10" height="10" fill="#17becf"/>
+<text x="724" y="186" font-family="Arial" font-size="11">static</text>
+<polyline points="60.0,88.3 145.3,92.8 273.3,99.8 486.7,100.3 700.0,100.3" fill="none" stroke="#7f7f7f" stroke-width="2"/>
+<circle cx="60.0" cy="88.3" r="3" fill="#7f7f7f"/>
+<circle cx="145.3" cy="92.8" r="3" fill="#7f7f7f"/>
+<circle cx="273.3" cy="99.8" r="3" fill="#7f7f7f"/>
+<circle cx="486.7" cy="100.3" r="3" fill="#7f7f7f"/>
+<circle cx="700.0" cy="100.3" r="3" fill="#7f7f7f"/>
+<rect x="708" y="194" width="10" height="10" fill="#7f7f7f"/>
+<text x="724" y="204" font-family="Arial" font-size="11">validation_gated</text>
+<text x="60.0" y="418" text-anchor="middle" font-family="Arial" font-size="11">0</text>
+<text x="145.3" y="418" text-anchor="middle" font-family="Arial" font-size="11">0.1</text>
+<text x="273.3" y="418" text-anchor="middle" font-family="Arial" font-size="11">0.25</text>
+<text x="486.7" y="418" text-anchor="middle" font-family="Arial" font-size="11">0.5</text>
+<text x="700.0" y="418" text-anchor="middle" font-family="Arial" font-size="11">0.75</text>
+<line x1="56" y1="400.0" x2="60" y2="400.0" stroke="black"/>
+<text x="52" y="404.0" text-anchor="end" font-family="Arial" font-size="11">0.38</text>
+<line x1="56" y1="315.0" x2="60" y2="315.0" stroke="black"/>
+<text x="52" y="319.0" text-anchor="end" font-family="Arial" font-size="11">0.47</text>
+<line x1="56" y1="230.0" x2="60" y2="230.0" stroke="black"/>
+<text x="52" y="234.0" text-anchor="end" font-family="Arial" font-size="11">0.56</text>
+<line x1="56" y1="145.0" x2="60" y2="145.0" stroke="black"/>
+<text x="52" y="149.0" text-anchor="end" font-family="Arial" font-size="11">0.65</text>
+<line x1="56" y1="60.0" x2="60" y2="60.0" stroke="black"/>
+<text x="52" y="64.0" text-anchor="end" font-family="Arial" font-size="11">0.74</text>
+</svg>
