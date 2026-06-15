@@ -1,0 +1,31 @@
+﻿# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local environments and secrets
+.env
+.env.*
+.env.local.ps1
+!.env.example
+!configs/env.example.ps1
+
+# Generated large experiment artifacts
+data/**/*.json
+data/**/*.jsonl
+data/**/*.csv
+!data/**/main_table.md
+!data/**/ablation_table.md
+!data/**/table.md
+!data/**/diagnosis_report.md
+
+# Temporary outputs
+.tmp/
+tmp/
+outputs/
+
+# Private manuscripts
+paper/
